@@ -15,7 +15,7 @@
 vector<int>v1[1000001];
 bool vis[1000001];
 ll parent[1000001];
-void dfs(ll root) {
+void bfs(ll root) {
  	ll i;
 	queue<ll>q1;
 	q1.push(root);
