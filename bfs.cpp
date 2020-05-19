@@ -15,10 +15,11 @@
 vector<int>v1[1000001];
 bool vis[1000001];
 ll parent[1000001];
-void bfs(ll root) {
+void dfs(ll root) {
  	ll i;
 	queue<ll>q1;
 	q1.push(root);
+	vis[root]=1;
 	while(!q1.empty()) {
 		ll temp=q1.front();
 		q1.pop();
